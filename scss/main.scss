@@ -19,6 +19,7 @@ html {
   // @include response-phone {
   //   font-size: 50%;
   // }
+  // background: linear-gradient(to right bottom, rgba(86, 13, 13, 0.8), rgba(169, 99, 106, 0.8));
 }
 
 body {
@@ -31,6 +32,8 @@ body {
 
   .nav {
     font-size: 1.5rem;
+    font-weight: 300;
+    color: $color-grey-light-1;
     position: relative;
     flex-direction: row;
     justify-content: space-around;
@@ -46,16 +49,12 @@ body {
       list-style: none;
       text-decoration: none;
       align-items: center;
-
-      li {
-      }
     }
   }
 }
 
 .landing {
   height: 100vh;
-  // background: linear-gradient(to right bottom, rgba(86, 13, 13, 0.8), rgba(169, 99, 106, 0.8));
   background-size: cover;
   background-position: top;
   display: flex;
@@ -75,5 +74,36 @@ body {
     height: 100vh;
     width: 50vw;
     background-color: $color-dark;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  &__title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  &__half {
+    border: blue solid 1px;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    &__left {
+      height: 100%;
+      width: 50vw;
+      background-color: red;
+    }
+    &__rigth {
+      height: 100%;
+      width: 50vw;
+      background-color: orange;
+    }
   }
 }

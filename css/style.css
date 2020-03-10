@@ -18,6 +18,8 @@ body {
   height: 12vh; }
   .header .nav {
     font-size: 1.5rem;
+    font-weight: 300;
+    color: #f7f7f7;
     position: relative;
     flex-direction: row;
     justify-content: space-around;
@@ -52,3 +54,29 @@ body {
     height: 100vh;
     width: 50vw;
     background-color: #560d0d; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw; }
+  .info__title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .info__half {
+    border: blue solid 1px;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+    .info__half__left {
+      height: 100%;
+      width: 50vw;
+      background-color: red; }
+    .info__half__rigth {
+      height: 100%;
+      width: 50vw;
+      background-color: orange; }
