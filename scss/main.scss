@@ -1,3 +1,5 @@
+@import 'variables';
+
 *,
 *:after,
 *:before {
@@ -53,11 +55,10 @@ body {
 
 .landing {
   height: 100vh;
-  background: linear-gradient(to right bottom, rgba(86, 13, 13, 0.8), rgba(169, 99, 106, 0.8));
+  // background: linear-gradient(to right bottom, rgba(86, 13, 13, 0.8), rgba(169, 99, 106, 0.8));
   background-size: cover;
   background-position: top;
-  position: relative;
-
+  display: flex;
   &__title {
     position: absolute;
     top: 40%;
@@ -65,6 +66,14 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  &__text-box {
+  &__left {
+    height: 100vh;
+    width: 50vw;
+    background-color: $color-light;
+  }
+  &__right {
+    height: 100vh;
+    width: 50vw;
+    background-color: $color-dark;
   }
 }
