@@ -1,0 +1,47 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  box-sizing: border-box; }
+
+.header {
+  position: fixed;
+  right: 0;
+  height: 12vh; }
+  .header .nav {
+    font-size: 1.5rem;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    width: 40vw;
+    height: 100%;
+    align-items: center; }
+    .header .nav ul {
+      position: absolute;
+      list-style: none;
+      text-decoration: none;
+      align-items: center; }
+
+.landing {
+  height: 100vh;
+  background: linear-gradient(to right bottom, rgba(86, 13, 13, 0.8), rgba(169, 99, 106, 0.8));
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .landing__title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
